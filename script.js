@@ -1,10 +1,10 @@
-let nombre = prompt("¿como te llamas?");
+let nombre;
 
-while (!nombre) {
-    nombre = prompt ("que pongas tu nombre amor >:(");
-}
+do {
+nombre = prompt("¿Cómo te llamas?");
+
+} while (nombre === null || nombre.trim() === "");
 
 alert ("hola " + nombre);
-
 
 
